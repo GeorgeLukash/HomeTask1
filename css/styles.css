@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background: #b0c4a8;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+button {
+    background: rgba(255,255,255,0);
+    border-radius:10px;
+}
+/*========Header========*/
+.header {
+    background: #4d4d4d;
+    border-bottom: 2px solid black;
+}
+
+.header-menu {
+    list-style-type: none;
+    display: table-row;
+    float: right;
+    padding-top: 25px;
+}
+
+    .header-menu li {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        text-shadow: -1px 0 black, 1px 0 black, 0 1px black, 0 -1px black;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 25px;
+    }
+
+    .header-menu img {
+        width: 25px;
+        height: 25px;
+        float: right;
+    }
+
+    .header-menu li:hover {
+        background: rgba(255,255,255,0.7);
+    }
+
+        .header-menu li:hover:last-child {
+            background: none;
+        }
+
+.img-container {
+    height: 250px;
+    width: 400px;
+    float: left;
+    border-radius: 50px;
+    background: url('../images/hackerman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.header-text {
+    margin-left: 35%;
+    padding: 0 15px;
+    height: 250px;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+    .header-text h1 {
+        color: white;
+        text-shadow: -1px 1px black, 1px 1px black, 1px 1px black, 1px -1px black;
+        font-size: 80px;
+    }
+/*========.Header========*/
+
+/*========Content========*/
+.content {
+    background: #ddf6d2;
+    display: flex;
+    flex-direction: column;
+}
+
+    .content div {
+        background: #a53f3f;
+        color: white;
+    }
+
+.row {
+    border: 1px solid black;
+    margin: 15px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 35px 0 35px 0;
+}
+
+    .row div {
+        background: black;
+        width: 20vw;
+        word-wrap: break-word;
+        margin: 10px auto;
+        overflow: auto;
+        padding: 25px 10px;
+        text-align: justify;
+        line-height:1.2;
+        border-radius: 15px;
+    }
+
+    .row :nth-child(2n+1)::after {
+        content: "New!!!";
+        color: white;
+        padding:1px;
+        background: red;
+        border-radius: 2px;
+        border: 2px solid white;
+    }
+/*========.Content========*/
+/*========Menu========*/
+.menu {
+    float: left;
+    width: 250px;
+}
+
+    .menu ul {
+        width: 250px;
+        list-style-type: none;
+    }
+
+    .menu li {
+        background: #9bd086;
+        border-top: 1px solid white;
+        border-bottom: 1px solid #000000;
+        width: 235px;
+        padding: 5px 0 5px 15px;
+        font-size: 18px;
+    }
+
+        .menu li:hover {
+            font-weight: bold;
+            padding: 5px 0 5px 25px;
+            background: white;
+        }
+/*========.Menu========*/
+/*========Footer========*/
+.footer {
+    border-top: 15px solid #313141;
+    background: #4d4d4d;
+}
+
+.first-part {
+    height: 180px;
+    background: #0026ff;
+    display: flex;
+    flex-direction: row;
+}
+
+    .first-part div {
+        height: 180px;
+        background: brown;
+        padding: 5px 5px;
+        width: 25%;
+        border-left: 1px solid black;
+        border-right: 1px solid white;
+    }
+
+    .first-part ul {
+        list-style-type: none;
+        text-align:center;
+    }
+    .first-part li{
+        font-size:18px;
+    }
+    .first-part li:first-child{
+        font-weight:bold;
+        text-decoration:underline;
+        text-shadow: -1px 0 white, 1px 0 white, 0 1px white, 0 -1px white;
+        line-height:1.5;
+        color:#313141;
+        font-size:24px;
+    }
+.second-part {
+    height: 100px;
+}
+
+    .second-part img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .second-part div {
+        padding: 50px;
+    }
+
+    .second-part a {
+        color: black !important;
+        font-weight: bold;
+    }
+
+.left {
+    float: left;
+}
+
+    .left a {
+        margin: 0 15px;
+    }
+
+.right {
+    float: right;
+}
+/*========.Footer========*/
